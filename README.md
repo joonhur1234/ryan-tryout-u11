@@ -14,7 +14,9 @@ index.html
 style.css
 script.js
 assets/
-  videos/clip1.mp4, clip2.mp4, clip3.mp4     (~47 MB total)
+   videos/clip1.mp4, clip2.mp4, clip3.mp4     (Phase 1 clips)
+   videos/LiveBarn-*.mp4                     (Phase 2 Prospects Game goals)
+   videos/20260905_211204.mp4                (practice video)
   posters/clip1.jpg, clip2.jpg, clip3.jpg
 ```
 
@@ -62,5 +64,5 @@ Then do step 3 above (turn on Pages in Settings) to get the live link.
 ## Notes
 
 - The pre-game checklist saves checked items in the browser (`localStorage`), so it remembers state next time Ryan opens the page on the same device/browser.
-- Video files are already sized well under GitHub's limits (100 MB per file), so they'll upload and serve fine directly from the repo.
+- Video files are already sized well under GitHub's limits (100 MB per file), so they'll upload and serve fine directly from the repo. The first three clips are Phase 1; the two `LiveBarn-*.mp4` files are Phase 2 Prospects Game goals.
 - To update any tips or swap in new game film later, just edit `index.html` (text) or replace the files in `assets/videos` — keep the same filenames (`clip1.mp4` etc.) or update the `<source>` paths in `index.html` to match.
