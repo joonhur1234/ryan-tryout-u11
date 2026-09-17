@@ -101,6 +101,66 @@ const quizData = [
       'Stay in the corner and never check the middle lane'
     ],
     answer: 'Take smart angles, protect the middle, and force play wide'
+  },
+  {
+    question: 'What should a winger do when the defenseman gains control of the puck during a breakout?',
+    options: [
+      'Explode to the breakout position and become a passing option',
+      'Stop behind the net and wait for the play to finish',
+      'Skate directly toward the puck carrier and block the passing lane',
+      'Leave the zone before the puck is ready to move'
+    ],
+    answer: 'Explode to the breakout position and become a passing option'
+  },
+  {
+    question: 'After reaching a breakout position, what speed helps you receive a pass cleanly?',
+    options: [
+      'A controlled glide while facing the puck',
+      'A full sprint with your back to the puck',
+      'A complete stop facing the boards',
+      'Random changes of direction'
+    ],
+    answer: 'A controlled glide while facing the puck'
+  },
+  {
+    question: 'What should you do immediately after receiving the puck in the neutral zone?',
+    options: [
+      'Accelerate to attack before the defense can regroup',
+      'Hold the puck until every teammate stops skating',
+      'Turn back toward your own net every time',
+      'Shoot the puck out of play'
+    ],
+    answer: 'Accelerate to attack before the defense can regroup'
+  },
+  {
+    question: 'Why should a forward protect the middle of the ice without the puck?',
+    options: [
+      'To take away dangerous passing and scoring options',
+      'To avoid helping the defense',
+      'To stay as far from the play as possible',
+      'To force teammates to defend alone'
+    ],
+    answer: 'To take away dangerous passing and scoring options'
+  },
+  {
+    question: 'What is the best defensive angle when pressuring an opponent along the boards?',
+    options: [
+      'An angle that guides the opponent away from the middle',
+      'A straight line that gives the opponent the center lane',
+      'An angle that sends the opponent behind your own net',
+      'No angle; follow directly behind the opponent'
+    ],
+    answer: 'An angle that guides the opponent away from the middle'
+  },
+  {
+    question: 'What makes a strong teammate during a breakout?',
+    options: [
+      'Moving into open space and communicating clearly',
+      'Standing behind the puck carrier',
+      'Calling for the puck without getting open',
+      'Leaving the zone early every time'
+    ],
+    answer: 'Moving into open space and communicating clearly'
   }
 ];
 
