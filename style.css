@@ -24,7 +24,9 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--ice-2);
+  background:
+    radial-gradient(circle at top left, rgba(200, 16, 46, 0.06), transparent 28%),
+    linear-gradient(180deg, #f3f7fb 0%, var(--ice-2) 100%);
   color: var(--navy);
   font-family: var(--font-body);
   line-height: 1.55;
@@ -36,7 +38,7 @@ img, video { max-width: 100%; display: block; }
 a { color: inherit; }
 
 .wrap {
-  max-width: 1120px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 28px;
 }
@@ -114,11 +116,15 @@ input:focus-visible {
   font-size: 11px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  transition: color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease;
   line-height: 1;
   padding: 6px 4px;
+  border-bottom: 1px solid transparent;
 }
-.navlinks a:hover { color: #fff; }
+.navlinks a:hover {
+  color: #fff;
+  border-color: rgba(212,160,23,0.8);
+}
 
 .nav-toggle {
   display: none;
@@ -242,7 +248,7 @@ input:focus-visible {
 }
 
 /* ---------- Section base ---------- */
-section { padding: 88px 0; }
+section { padding: 90px 0; }
 .section-dark { background: var(--navy); color: #fff; }
 .section-light { background: var(--ice-2); color: var(--navy); }
 .section-mid { background: var(--ice); color: var(--navy); }
@@ -280,7 +286,8 @@ h2.section-title {
   padding: 22px 24px;
   background: #fff;
   border: 1px solid var(--line-dark);
-  border-radius: 3px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(12,31,61,0.04);
 }
 .assignment-callout .k {
   font-family: var(--font-display);
@@ -311,6 +318,7 @@ h2.section-title {
 .fact {
   background: #fff;
   padding: 22px 20px;
+  border-radius: 0;
 }
 .fact .k {
   font-family: var(--font-display);
@@ -424,6 +432,7 @@ h2.section-title {
 .zone-card {
   background: #fff;
   border: 1px solid var(--line-dark);
+  border-radius: 14px;
   padding: 26px 24px 22px;
   box-shadow: 0 8px 24px rgba(12,31,61,0.04);
 }
@@ -460,7 +469,9 @@ h2.section-title {
   margin-top: 42px;
   background: #fff;
   border: 1px solid var(--line-dark);
+  border-radius: 16px;
   padding: 28px 24px 10px;
+  box-shadow: 0 10px 18px rgba(12,31,61,0.03);
 }
 .speed-header {
   margin-bottom: 14px;
@@ -511,6 +522,7 @@ h2.section-title {
   margin-top: 32px;
   background: linear-gradient(180deg, rgba(212,160,23,0.15), rgba(212,160,23,0.04));
   border: 1px solid rgba(212,160,23,0.3);
+  border-radius: 14px;
   padding: 24px 26px;
 }
 .tip-box h3 {
@@ -530,7 +542,9 @@ h2.section-title {
   margin-top: 32px;
   background: #fff;
   border: 1px solid var(--line-dark);
+  border-radius: 16px;
   padding: 28px 24px;
+  box-shadow: 0 10px 22px rgba(12,31,61,0.03);
 }
 .breakout-header h3 {
   margin: 0;
@@ -594,7 +608,9 @@ h2.section-title {
   background: var(--navy);
   color: #fff;
   border: 1px solid var(--line);
+  border-radius: 18px;
   padding: 28px 24px 32px;
+  box-shadow: 0 18px 38px rgba(12,31,61,0.12);
 }
 .hockey-iq-box {
   margin-top: 28px;
@@ -642,6 +658,7 @@ h2.section-title {
 .quiz-question {
   background: rgba(255,255,255,0.04);
   border: 1px solid var(--line);
+  border-radius: 14px;
   padding: 22px 20px;
 }
 .quiz-question h4 {
@@ -662,11 +679,13 @@ h2.section-title {
   padding: 12px 14px;
   cursor: pointer;
   font: inherit;
-  transition: border-color 0.15s ease, background 0.15s ease;
+  border-radius: 10px;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
 }
 .quiz-option:hover, .quiz-option:focus-visible {
   border-color: var(--gold);
   background: rgba(212,160,23,0.08);
+  transform: translateY(-1px);
 }
 .quiz-option.correct {
   border-color: #7CD9A0;
@@ -709,6 +728,7 @@ h2.section-title {
 .scout-card {
   background: #fff;
   padding: 30px 32px;
+  border-radius: 0;
 }
 .scout-card .icon {
   width: 44px;
@@ -738,8 +758,10 @@ h2.section-title {
   display: grid;
   grid-template-columns: 130px 1fr;
   gap: 28px;
-  padding: 24px 0;
+  padding: 26px 18px;
   border-top: 1px solid var(--line-dark);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.18);
 }
 .play-row:last-child { border-bottom: 1px solid var(--line-dark); }
 @media (max-width: 640px) {
