@@ -25,8 +25,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(200, 16, 46, 0.06), transparent 28%),
-    linear-gradient(180deg, #f3f7fb 0%, var(--ice-2) 100%);
+    linear-gradient(180deg, #edf4fb 0%, #f6f9fc 28%, #f2f6fa 100%);
   color: var(--navy);
   font-family: var(--font-body);
   line-height: 1.55;
@@ -76,9 +75,10 @@ input:focus-visible {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(12, 31, 61, 0.94);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--line);
+  background: rgba(12, 31, 61, 0.97);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 8px 18px rgba(12,31,61,0.12);
 }
 .topnav .wrap {
   display: flex;
@@ -90,15 +90,17 @@ input:focus-visible {
   font-family: var(--font-display);
   color: #fff;
   text-decoration: none;
-  font-size: 19px;
-  letter-spacing: 0.03em;
+  font-size: 20px;
+  letter-spacing: 0.05em;
   display: flex;
   align-items: baseline;
   gap: 8px;
+  text-transform: uppercase;
 }
 .brand .num {
   color: var(--gold);
-  font-size: 15px;
+  font-size: 14px;
+  letter-spacing: 0.12em;
 }
 .navlinks {
   display: flex;
@@ -113,17 +115,19 @@ input:focus-visible {
 .navlinks a {
   color: var(--frost);
   text-decoration: none;
-  font-size: 11px;
-  letter-spacing: 0.09em;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
   line-height: 1;
-  padding: 6px 4px;
+  padding: 7px 4px 6px;
   border-bottom: 1px solid transparent;
+  opacity: 0.9;
 }
 .navlinks a:hover {
   color: #fff;
   border-color: rgba(212,160,23,0.8);
+  opacity: 1;
 }
 
 .nav-toggle {
@@ -172,7 +176,7 @@ input:focus-visible {
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  background: var(--navy);
+  background: linear-gradient(135deg, var(--navy) 0%, #0a1830 50%, #102847 100%);
   color: #fff;
   overflow: hidden;
   padding: 96px 0 110px;
@@ -225,6 +229,7 @@ input:focus-visible {
   color: var(--frost);
   max-width: 560px;
   margin: 26px 0 0;
+  letter-spacing: 0.01em;
 }
 .hero-role b { color: #fff; font-weight: 600; }
 
@@ -260,6 +265,7 @@ h2.section-title {
   line-height: 1.05;
   margin: 0 0 22px;
   max-width: 720px;
+  letter-spacing: 0.02em;
 }
 
 .lede {
@@ -432,9 +438,9 @@ h2.section-title {
 .zone-card {
   background: #fff;
   border: 1px solid var(--line-dark);
-  border-radius: 14px;
+  border-radius: 16px;
   padding: 26px 24px 22px;
-  box-shadow: 0 8px 24px rgba(12,31,61,0.04);
+  box-shadow: 0 12px 28px rgba(12,31,61,0.04);
 }
 .zone-badge {
   width: 34px;
@@ -605,12 +611,12 @@ h2.section-title {
 }
 .quiz-box {
   margin-top: 42px;
-  background: var(--navy);
+  background: linear-gradient(180deg, #0d2342 0%, #101f39 100%);
   color: #fff;
-  border: 1px solid var(--line);
-  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 20px;
   padding: 28px 24px 32px;
-  box-shadow: 0 18px 38px rgba(12,31,61,0.12);
+  box-shadow: 0 20px 42px rgba(12,31,61,0.14);
 }
 .hockey-iq-box {
   margin-top: 28px;
